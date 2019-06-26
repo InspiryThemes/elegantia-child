@@ -40,7 +40,7 @@ if ( ! function_exists( 'inspiry_elegantia_child_theme_setup' ) ) {
 	 * Load translation files from child theme
 	 */
 	function inspiry_elegantia_child_theme_setup() {
-		load_child_theme_textdomain( 'framework', get_stylesheet_directory() . '/languages' );
+		load_child_theme_textdomain( 'elegantia-child', get_stylesheet_directory() . '/languages' );
 	}
 }
 add_action( 'after_setup_theme', 'inspiry_elegantia_child_theme_setup' );
