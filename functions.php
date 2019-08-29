@@ -22,13 +22,13 @@ if ( ! function_exists( 'inspiry_enqueue_child_styles' ) ) {
 			wp_enqueue_style( 'parent-custom' );
 
 			// child default css */
-			wp_enqueue_style( 'child-default', get_stylesheet_uri(), array( 'parent-default' ), '1.4.0', 'all' );
+			wp_enqueue_style( 'child-default', get_stylesheet_uri(), array( 'parent-default' ), '1.4.1', 'all' );
 
 			// child custom css
-			wp_enqueue_style( 'child-custom', get_stylesheet_directory_uri() . '/css/child-custom.css', array( 'child-default' ), '1.0', 'all' );
+			wp_enqueue_style( 'child-custom', get_stylesheet_directory_uri() . '/css/child-custom.css', array( 'child-default' ), '1.2', 'all' );
 
 			// child custom js
-			wp_enqueue_script( 'child-custom', get_stylesheet_directory_uri() . '/js/child-custom.js', array( 'jquery' ), '1.0', true );
+			wp_enqueue_script( 'child-custom', get_stylesheet_directory_uri() . '/js/child-custom.js', array( 'jquery' ), '1.2', true );
 		}
 	}
 }
